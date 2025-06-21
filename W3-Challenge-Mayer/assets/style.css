@@ -94,9 +94,6 @@ p {
  .btn {
   margin-left: 30px;
  }
-
- 
-
  /* Accordion Headers */
 .ui-accordion-header.ui-state-default {
     background-color: var(--orange-fade); /* Light grey */
