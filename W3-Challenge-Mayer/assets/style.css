@@ -1,0 +1,111 @@
+:root {
+  --orange: rgb(254, 164, 7);
+  --orange-fade: rgb(248, 191, 107);
+  --full-fade: rgb(255, 249, 240);
+  --fade-away: rgb(250, 250, 248);
+  --text-colour: black;
+  --button-green: #04AA6D;
+}
+/* Use of variables to reduce dublication and accommodate dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --orange: rgb(254, 164, 7);
+    --orange-fade: rgb(82, 63, 34);
+    --full-fade: rgb(62, 52, 39);
+    --fade-away: rgb(50, 39, 14);
+    --text-colour: white;
+  }
+}
+
+
+html {  /* When linking to page anchors, compensate for fixed header & nav bar */
+  scroll-padding-top: 150px; /* Adjust to match the header height */
+}
+
+body {
+  padding-top: 80px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+header {
+  position: fixed;
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Adds space between text and image */
+  padding: 20px;
+  background-color: orange; /* Light background */
+  width: 100%;
+  top: 0;
+  margin-bottom: 0; /* Removes extra space */
+  padding-bottom: 0; /* Ensures no padding adds space */
+  z-index: 1050; /* Ensures it stays above navbar */
+}
+
+header img {
+  width: 50px;
+  /* float: right; */  /* that doesn't work too well */
+   height: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  /*Adjust based on header height */
+  z-index: 1040; /* Keeps navbar below header */
+  
+}
+
+.colour-transition-10f1 {
+  width: 100%;
+  min-height: 900px;
+  background: linear-gradient(to bottom, var(--orange), var(--full-fade)); 
+}
+
+h2, h3 {
+  padding: 30px 30px 10px 30px;
+}
+
+p {
+  padding: 0 30px;
+}
+
+.bg-card {
+  background-color: var( --orange);
+}
+
+.bg-card-footer {
+  background-color: VAR(--orange-fade);
+}
+
+.footer-container-item {
+  font-size: 12px;       /* Sets the text size */
+  font-style: italic;    /* Makes the text italic */
+  padding-top: 50px;         /* Adds space inside the element */
+
+}
+
+.contact-form {
+  margin-left: 50px;
+}
+ .btn {
+  margin-left: 30px;
+ }
+
+ 
+
+ /* Accordion Headers */
+.ui-accordion-header.ui-state-default {
+    background-color: var(--orange-fade); /* Light grey */
+    background-image: none; /* Remove any default gradient */
+    color: #333;
+}
+
+#accordion div{
+  background-color: var(--orange);
+  color: #333;
+ }
+

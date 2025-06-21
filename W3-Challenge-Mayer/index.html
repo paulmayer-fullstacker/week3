@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+<header class="container-fluid py-3">
+  <div class="d-flex align-items-center justify-content-center gap-3">
+    <h1>Step8Up</h1>
+    <img src="./assets/images/step8up-logo.png" alt="Company Logo" width="80">
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <div class="container-fluid">
+    <a class="navbar-brand" href="#">Step8Up > Go</a>
+     <!-- This .navbar-toggler collapses the menu into a burger menu. 
+    To achieve this (with: data-bs-toggle="collapse" and data-bs-target="#navbarNav")
+    Bootstrap-5 downloads it's own JavaScript into the browser from the CDN. -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ethos">Ethos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <main class="colour-transition-10f1">
+    <section id="home">
+      <!-- <img src=".\assets\images\StepUp.PNG" alt="StepUp company banner page" class="banner-image">   -->
+      <!-- <div style="background-color: rgb(254, 164, 7); min-height: 100px;"></div> -->
+      <div>
+        <h2 id="ethos" class="text-center">Our Ethos</h2>
+        <p>General company information eventually turning focul upon recent sucess stories. 
+          The success stories will be referenced in the next section, where links will be provised to the specific project pages. 
+          Each project page with give a detailed description of an individual project.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+          In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+          Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+          Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        <p>Nunc a imperdiet nisi, quis porta odio. Aenean mauris justo, malesuada eget dignissim quis, sollicitudin vitae est. 
+          Nunc sit amet dignissim ex, vitae laoreet nulla. Sed auctor et nibh ultricies ultrices. 
+          Vestibulum eu ipsum eleifend, dictum sapien et, consequat enim. Mauris blandit suscipit neque, sit amet malesuada lectus molestie vel. 
+          Sed aliquam commodo purus. Integer luctus ullamcorper lacus a tincidunt. Maecenas ullamcorper dui sed nibh molestie scelerisque. 
+          Maecenas interdum fringilla finibus. Nullam ut ex eu diam pharetra imperdiet. Suspendisse ultricies lacus enim, 
+          non lobortis arcu suscipit sit amet. Suspendisse vel ligula sem. </p>
+        <p>Take a look at some of our sucess stories. Click on the images below to visit our project pages. 
+          Learn about our customer focused design, delivery, and support strategies. Read testimonials from our satified customers 
+          and long-term service partners. </p>
+      </div>
+  </section>
+  <section id="projects" class="py-5"> <div class="container">
+    <!-- Using Bootstrap default styling, as much as possible. Minimum restyling. -->
+        <h2 class="text-center mb-4">My Projects</h2> <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <div class="col">
+                <a href="project-1-page.html" class="card h-100 text-decoration-none text-dark">
+                    <img src="./assets/images/burningRuin3.png" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body bg-card">
+                        <h3 class="card-title">Project-1</h3>
+                        <p class="card-text">The quick brown fox jumps over the lazy dog. 1234567890987654321 ryr ryr ryr ryr ryr ryr ryr ryr ryr ryr ryr .</p>
+                    </div>
+                    <div class="card-footer bg-card-footer">
+                        <small class="text-muted">Click to learn more</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="project-2-page.html" class="card h-100 text-decoration-none text-dark">
+                    <img src="./assets/images/burningRuin3.png" class="card-img-top" alt="Project 2 Image"> 
+                    <div class="card-body bg-card">
+                        <h3 class="card-title">Project-2</h3>
+                        <p class="card-text">The quick brown fox jumps over the lazy dog. 1234567890987654321 ryr ryr ryr ryr ryr ryr ryr ryr ryr ryr ryr .</p>
+                    </div>
+                    <div class="card-footer bg-card-footer">
+                        <small class="text-muted">Click to learn more</small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="project-3-page.html" class="card h-100 text-decoration-none text-dark">
+                    <img src="./assets/images/burningRuin3.png" class="card-img-top" alt="Project 3 Image"> 
+                    <div class="card-body bg-card">
+                        <h3 class="card-title">Project-3</h3>
+                        <p class="card-text">The quick brown fox jumps over the lazy dog. 1234567890987654321 ryr ryr ryr ryr ryr ryr ryr ryr ryr ryr ryr .</p>
+                    </div>
+                    <div class="card-footer bg-card-footer">
+                        <small class="text-muted">Click to learn more</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Employing Bootstrap grid system (container, row and column) to ensure that contemt sections
+  will accomodate multiple viewport sizes without further configuration. -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <H2 id="contact">Contact</H2>
+         <p>If you'd like to get in touch, you can call, e-mail, or submit a contact form.</p>
+         <p>In all cases, your information will be held in confidence and won't be shared with third parties.</p>
+      </div>
+      <div class="col-md-6">
+          <h3 id="contact-me">Contact Step8Up:</h3>
+         <p>Call: 01234 567 890</p>
+         <p>Mail: <a href="mailto:pmayer.devopseng@gmail.com"> Info@Step8Up.com </a></p>
+         <p>Submit a Contact <a href="contact-form.html" target="_blank">Form</a></p>
+      </div>
+    </div>
+  </section>
+  <div>
+  <br/>
+  <hr class="bottom-line">
+    <footer class="container">
+      <div class="row">
+        <div class="col-md-6 footer-container-item">
+        <p>This website is a work of fiction.</p>
+        <p>Reference to actual persons, living or dead, or actual events, is purely coincidental.</p>
+        <p>No infrastructure of buildings were damaged during the creation of this website</p>
+      </div>
+      <div class="col-md-6 footer-container-item">
+        <p>The content of this website is freely available for use, 
+        <br/> modification, and distribution by anyone.</p>
+        <p>No license restrictions apply.</p>
+      </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/script.js"></script>
+  </div>
+  <br/>
+  <!-- Import JQuery library from CDN: -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+</body> 
+</html>

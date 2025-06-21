@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+     <!-- jQuery and jQuery UI CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+  <header class="container-fluid py-3">
+  <div class="d-flex align-items-center justify-content-center gap-3">
+    <h1>Step8Up</h1>
+    <img src="./assets/images/step8up-logo.png" alt="Company Logo" width="80">
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <div class="container-fluid">
+    <a class="navbar-brand" href="#">Step8Up > Go</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="colour-transition-10f1">
+  <main>
+    <section>
+      <h2>Project-1</h2>
+      <p>A brief over view of Project 1. Covering several paragraphs this will discuss the customer, their requirements and Step8Up's solution.</p>
+      <p>The discussion will focus on challenges and the busines partnership which overcame the challenges. The partnership which continues to maintain and scale the product/service into the future.</p>
+      <p>At any point, use the nav-bar to return to the Home page, or visit the Contact page.</p>
+      <br/>
+    </section>
+    <section>
+      <!-- JQuery Toggle Button, used to show/hide content.
+      Surves no purpose other than to showcase JQuery use.
+      Using default styling, as much as possible. Minimum restyling. -->
+      <div class="widget-container">
+      <h3>The Technical Details</h3>
+      <p>The challenge and solution in more detail.</p>
+      <div id="moreContent" style="display: none;">
+        <p>This is the hidden content that appears when you click the button. It could be a long paragraph, images, or more details.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <button class="btn btn-primary" id="toggleButton">Read More</button>
+    </div>     <!-- The toggleButton will initialise with this text. 
+                    However, once used the widget will controle the text on the button. -->
+    </section>
+    <br/>
+    <section>
+    <br/>
+      <!-- JQuery Accordian, used to show/hide content.
+      Surves no purpose other than to showcase JQuery use. 
+      Using default styling, as much as possible. Minimum restyling.-->
+    <h3>Read Testimonials:</h3>
+    <div id="accordion">
+      <h3>From The CEO</h3>
+      <div>
+        <p>Multi-paragraph testimonial from the CEO.</p>
+      </div>
+      <h3>From The Engineering Manager</h3>
+      <div>
+        <p>Multi-paragraph testimonial from the Eng Mng.</p>
+      </div>
+      <h3>From The Help Desk Junior</h3>
+      <div>
+        <p>Multi-paragraph testimonial from someone who actually understands the solution and works with it on a daily basis.</p>
+      </div>
+    </div>
+    </section>
+  </main>
+   <hr class="bottom-line">
+  <footer >
+   <p></p>
+  </footer>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/script.js"></script>
+  </div>
+
+  
+    <!-- <script>
+        $(document).ready(function () {
+            $('#toggleButton').click(function() {
+              const $moreContent = $('#moreContent'); // Cache the jQuery object for efficiency
+              const $thisButton = $(this); // Cache the button object
+
+              // Use a callback function with slideToggle()
+               $moreContent.slideToggle(function() {
+                  // This function runs *after* the slideToggle animation is complete
+                  if ($moreContent.is(':visible')) {
+                        // If it IS visible now (meaning it just finished showing)
+                      $thisButton.text('Show Less');
+                  } 
+                  else {
+                  // If it is NOT visible now (meaning it just finished hiding)
+                      $thisButton.text('Read More');
+                  }
+               });
+            });
+
+            $(function() {
+              // Initialize Accordion
+               $("#accordion").accordion(
+                {
+                  collapsible: true,
+                  active: false
+                }
+               );
+            });
+          });
+    </script> -->
+  </body>
+</html>
